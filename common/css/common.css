@@ -1,0 +1,152 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+	/*background-image:
+    linear-gradient(
+      transparent 97%,
+      #D0D0D0 10pt
+    ),
+    linear-gradient(
+      90deg,
+      transparent 97%,
+      #D0D0D0 10pt
+    );
+  background-size: 18px 18px;
+  background-repeat: repeat;
+  */
+  padding: 0;
+  margin: 0;
+  width: 100vw !important;
+  height: 100vh !important;
+  overflow: hidden !important;
+  /*background: rgba( 71,82,93 , 1 );*/
+}
+
+.side {
+	display: flex;
+  width: 10%;
+  height: 100vh;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+  float: left;
+  margin-bottom: -30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background: rgba( 71,82,93 , 0.42 );
+  border: whitesmoke solid 3px;
+}
+
+.side h1.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 10%;
+  color: whitesmoke;
+  font-family: sans-serif;
+  height: 5%;
+}
+
+.side h2 {
+  display: flex;
+  border-top: whitesmoke solid 1px;
+  border-bottom: whitesmoke solid 1px;
+  padding: 0%;
+  margin: 0;
+  color: whitesmoke;
+  height: 2.3em;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.side h2 + h2 {
+  padding: 0%;
+  margin: 0;
+}
+
+.side h2.menu_h2_t {
+  border-top: whitesmoke solid 2px;
+}
+
+.side h2.menu_h2_b {
+  border-bottom: whitesmoke solid 2px;
+}
+
+.side a {
+  text-decoration: none;
+  color:whitesmoke;
+}
+
+.copy {
+  align-items:baseline;
+}
+
+.side + .Top_content {
+  margin: 0;
+}
+
+.Top_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+.Top_content_bg {
+  background: url('/common/images/000007.JPG') ;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.Top_content::before {
+  content: '';
+  background: inherit;/*.bgImageで設定した背景画像を継承する*/
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
+  /*ブラー効果で画像の端がボヤけた分だけ位置を調整*/
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;/*重なり順序を一番下にしておく*/
+}
+
+p.Top_text {
+  /*background-color: rgba(229, 244, 244, 0.55);*/
+  color:whitesmoke !important ;
+}
+
+.Top_text + .Top_text {
+  margin: 10px;
+}
+
+h1.Top_text {
+  /*background-color: rgba(229, 244, 244, 0.55);*/
+  color: whitesmoke;
+  font-family: 'Source Code Pro', monospace;
+}
+/*
+p.Top_text {
+  background-color: rgba(229, 244, 244, 0.55);
+  color: whitesmoke;
+  font-family: 'Source Code Pro', monospace !important;
+}
+*/
+
+.Top_text_content {
+  background-color: rgba(68, 68, 68, 0.55);
+}
