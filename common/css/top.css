@@ -1,40 +1,44 @@
-body {
+.main_content {
+    min-height: 100vh;
+}
+
+.main_content_bg {
+    background: url('/mat/images/IMG_3782.jpg') ;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+  }
+
+.main_content::before {
+    content: '';
+    background: inherit;/*.bgImageで設定した背景画像を継承する*/
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;/*重なり順序を一番下にしておく*/
+}
+
+.main_content_t {
+    margin-top: 2em;
     text-align: center;
 }
+ hr.c_head_pt {
+    border: #fff1e793 solid 0.5px;
+    width: 4em;
+ }
 
-.header_logo {
+.top_about_me_txt {
+    padding-top: 3em;
+}
+
+.top_about_me_flex {
     display: flex;
-}
-
-.header_logo img {
-    width: 30%;
-    /*border: black 1px dashed;
-    height: 3em;*/
-}
-
-.menu li{
-    list-style: none;
-    font-size: 1em;
-}
-
-.header_menu {
-    /*background-color: #ADB5BD;*/
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    width: auto;
-}
-
-div.header_menu {
-    margin: 0 auto;
-}
-
-.li_menu {
-    max-width: 8em;
-    padding-inline-start: 1em;
-}
-
-.li_menu + .li_menu {
-    padding: 1em;
-    width: 100vh;
 }

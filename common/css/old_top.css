@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+}
+
+.header_logo {
+    display: flex;
+}
+
+.header_logo img {
+    width: 30%;
+    /*border: black 1px dashed;
+    height: 3em;*/
+}
+
+.menu li{
+    list-style: none;
+    font-size: 1em;
+}
+
+.header_menu {
+    /*background-color: #ADB5BD;*/
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+
+div.header_menu {
+    margin: 0 auto;
+}
+
+.li_menu {
+    max-width: 8em;
+    padding-inline-start: 1em;
+}
+
+.li_menu + .li_menu {
+    padding: 1em;
+    width: 100vh;
+}

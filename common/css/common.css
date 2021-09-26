@@ -22,6 +22,8 @@ body {
   height: 100vh !important;
   overflow: hidden !important;
   /*background: rgba( 71,82,93 , 1 );*/
+  font-family: 'Noto Serif JP', serif;
+  font-weight: 400;
 }
 
 .side {
@@ -98,7 +100,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100%;
+  height: 100vh !important; 
 }
 .Top_content_bg {
   background: url('/common/images/000007.JPG') ;
@@ -128,6 +130,7 @@ body {
 p.Top_text {
   /*background-color: rgba(229, 244, 244, 0.55);*/
   color:whitesmoke !important ;
+  font-family: 'Sawarabi Mincho', sans-serif;
 }
 
 .Top_text + .Top_text {
@@ -149,4 +152,14 @@ p.Top_text {
 
 .Top_text_content {
   background-color: rgba(68, 68, 68, 0.55);
+}
+
+.c_head {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.c_head_capt {
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.2em;
+  font-weight: 200;
 }
