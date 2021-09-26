@@ -1,5 +1,10 @@
 .main_content {
-    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh; 
 }
 
 .main_content_bg {
@@ -39,6 +44,10 @@
     padding-top: 3em;
 }
 
-.top_about_me_flex {
+/*.top_about_me_flex {
     display: flex;
+}*/
+
+footer.c_footer h2 {
+    text-align: center !important;
 }
