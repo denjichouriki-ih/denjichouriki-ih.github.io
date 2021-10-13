@@ -175,3 +175,31 @@ footer {
   padding-bottom: 1em;
 }
 
+.main_content_ct {
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.ytplay {
+  display: flex;
+}
+
+.main_content_ct iframe {
+  height: 25vh;
+}
+
+hr.c_blake_t {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 2%;
+}
+
+hr.c_blake_b {
+  padding: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 5%;
+  padding-bottom: 4em;
+}
