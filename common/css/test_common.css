@@ -158,3 +158,16 @@ h2.footer_text {
     font-size: small;
     font-weight: lighter;
 }
+
+@media screen and (max-width: 400px) {
+    .main_content_bg {
+        color: black !important;
+        font-weight: bolder !important;
+    }
+    .main_content_bg .c_head {
+        color: white !important;
+    }
+    .main_content_bg .c_head_capt {
+        color: white !important;
+    }
+}
