@@ -203,3 +203,22 @@ hr.c_blake_b {
   width: 5%;
   padding-bottom: 4em;
 }
+
+.nav nav {
+  display: flex;
+}
+
+.nav li {
+  list-style: none;
+  color: #f5f5f5;
+  font-size: 1.2em;
+}
+
+.nav li a:link {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.nav li a:visited {
+  color: #f5f5f5;
+}
